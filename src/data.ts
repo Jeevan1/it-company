@@ -127,3 +127,40 @@ export const serviceField = [
     image: "/assets/img/slider/3.png",
   },
 ];
+
+export const subscription = [
+  {
+    name: "Basic Plan",
+    price: "$99",
+    features: [
+      "Multi-Language Support",
+      "Unlimited Database",
+      "Powerful Admin Panel",
+      "Data Security",
+      "24/7 System Monitoring",
+    ],
+  },
+  {
+    name: "Advance Plan",
+    price: "$299",
+    features: [
+      "Multi-Language Support",
+      "Unlimited Database",
+      "Powerful Admin Panel",
+      "Data Security",
+      "Support via E-mail and Phone",
+      "24/7 System Monitoring",
+    ],
+  },
+  {
+    name: "Professional Plan",
+    price: "$199",
+    features: [
+      "Multi-Language Support",
+      "Unlimited Database",
+      "Powerful Admin Panel",
+      "Data Security",
+      "24/7 System Monitoring",
+    ],
+  },
+];

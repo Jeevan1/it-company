@@ -8,6 +8,9 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import { FiPhoneCall } from "react-icons/fi";
+import { IoMailUnreadOutline } from "react-icons/io5";
+import { MdOutlineShareLocation } from "react-icons/md";
 
 const FooterLink = ({
   value,
@@ -29,6 +32,25 @@ function Footer() {
   return (
     <footer className="py-10 mt-5 bg-accent">
       <div className="container">
+        <div className="flex justify-between items-center pb-10 mb-10 border-b border-white">
+          <div className="flex flex-1 flex-col gap-2 justify-center items-center border-r ">
+            <FiPhoneCall size={40} color="#fff" />
+            <p className="text-white font-semibold text-lg">Phone Number</p>
+            <p className="text-white font-semibold text-lg">+977-98267-2727</p>
+          </div>
+          <div className="flex flex-1 flex-col gap-2 justify-center items-center border-r">
+            <IoMailUnreadOutline size={40} color="#fff" />
+            <p className="text-white font-semibold text-lg">Email Address</p>
+            <p className="text-white font-semibold text-lg">geoshop@gmail</p>
+          </div>
+          <div className="flex flex-1 flex-col gap-2 justify-center items-center">
+            <MdOutlineShareLocation size={40} color="#fff" />
+            <p className="text-white font-semibold text-lg">Location</p>
+            <p className="text-white font-semibold text-lg">
+              Kathmandu, Budhanilkantha-13, Nepal
+            </p>
+          </div>
+        </div>
         <div className="Footer__top ">
           <div className="flex flex-wrap justify-between  border-bottom pb-4">
             <div className="lg:w-1/4 md:w-1/2 w-100 mt-5 sm:mt-0">
@@ -42,7 +64,9 @@ function Footer() {
                 />
               </div>
               <ul>
-                <FooterLink value={"Kathmandu, Budhanilkantha-13, Nepal"} />
+                <FooterLink
+                  value={"Kathmandu, Budhanilbjhghjkantha-13, Nepal"}
+                />
                 <FooterLink value={"geoshop@gmail.com"} />
                 <FooterLink value={"+977-98267-2727"} />
               </ul>

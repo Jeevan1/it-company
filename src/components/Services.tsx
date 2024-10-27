@@ -4,7 +4,7 @@ import { SecondaryButton } from "./Button";
 
 const Services = () => {
   return (
-    <div className="-mt-20 ">
+    <div className="-mt-20 mb-16">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 ">
           {services.map((item, i) => (

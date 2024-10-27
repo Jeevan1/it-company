@@ -5,7 +5,7 @@ import { PrimaryButton } from "./Button";
 
 const About = () => {
   return (
-    <div className="py-28">
+    <div className="py-16">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
           <div className="relative">

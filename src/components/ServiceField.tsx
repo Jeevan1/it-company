@@ -33,7 +33,7 @@ const ServiceField = () => {
   };
 
   return (
-    <div className="py-20">
+    <div className="py-16">
       <div className="container">
         <SectionHeading title="Service Field" className="justify-center">
           <h2 className="text-4xl font-medium leading-10 mt-3 text-center max-w-[1000px] mx-auto">
