@@ -2,20 +2,120 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+p {
+  line-height: 1.4;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    width: 95%;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.primary-btn {
+  background-color: transparent;
+  border: 2px solid #1a202c;
+  color: #1a202c;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1a202c;
+    z-index: -1;
+    transition: width 0.2s ease-in-out;
+  }
+
+  &:hover {
+    color: #fff;
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #2d3748;
+  color: #2d3748;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2d3748;
+    z-index: -1;
+    transition: width 0.2s ease-in-out;
+  }
+
+  &:hover {
+    color: #fff;
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.slick-next {
+  right: 0px !important;
+
+  &::before {
+    display: none;
+  }
+}
+.slick-prev {
+  left: 0px !important;
+  color: red !important;
+
+  &::before {
+    display: none;
+  }
 }
