@@ -7,7 +7,7 @@ import Link from "next/link";
 import { RiMenuFoldFill, RiMenuUnfoldFill } from "react-icons/ri";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [headerFixed, setHeaderFixed] = useState(false);
 
   const handleMenuClick = () => {
@@ -99,7 +99,11 @@ const Header = () => {
             </div>
           </div>
           <div className="md:hidden z-50 flex-1 flex justify-end">
-            <RiMenuFoldFill size={25} onClick={handleMenuClick} />
+            <RiMenuFoldFill
+              size={25}
+              onClick={handleMenuClick}
+              color={headerFixed ? "black" : "white"}
+            />
             {menuOpen && (
               <div
                 className="fixed top-0 left-0 bottom-0 w-full  px-10 bg-white bg-opacity-100 z-40"
