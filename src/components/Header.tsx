@@ -72,8 +72,8 @@ const Header = () => {
               {nav.map((item, i) => (
                 <li
                   key={i}
-                  className={`text-md text-white font-medium z-[100] ${
-                    headerFixed ? " text-black" : ""
+                  className={`text-md text-white z-[100] ${
+                    headerFixed ? " text-black font-bold" : " "
                   }`}
                 >
                   <Link

@@ -40,9 +40,9 @@ body {
 
 .primary-btn {
   background-color: transparent;
-  border: 2px solid #1a202c;
-  color: #1a202c;
-  padding: 10px 20px;
+  border: 2px solid #e97319;
+  color: #e97319;
+  padding: 10px 15px;
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
@@ -59,7 +59,7 @@ body {
     top: 0;
     width: 0;
     height: 100%;
-    background-color: #1a202c;
+    background-color: #e97319;
     z-index: -1;
     transition: width 0.2s ease-in-out;
   }
@@ -74,9 +74,9 @@ body {
 
 .secondary-btn {
   background-color: transparent;
-  border: 2px solid #2d3748;
-  color: #2d3748;
-  padding: 10px 20px;
+  border: 2px solid #ef911e;
+  color: #ef911e;
+  padding: 10px 15px;
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
@@ -93,7 +93,7 @@ body {
     top: 0;
     width: 0;
     height: 100%;
-    background-color: #2d3748;
+    background-color: #ef911e;
     z-index: -1;
     transition: width 0.2s ease-in-out;
   }

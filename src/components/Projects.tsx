@@ -36,7 +36,7 @@ const Projects = () => {
     <div className="py-16">
       <div className="container">
         <SectionHeading title="Our Projects" className="justify-center">
-          <h2 className="text-4xl font-medium leading-10 mt-3 text-center max-w-[1000px] mx-auto">
+          <h2 className="text-4xl font-semibold leading-10 mt-3 text-center max-w-[1000px] mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{" "}
             <span className="text-primary">Eiusmod</span>.
           </h2>

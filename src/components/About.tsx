@@ -31,7 +31,7 @@ const About = () => {
           <div className="flex flex-col justify-center">
             <div className="border-b pb-10">
               <SectionHeading title="About Us">
-                <h2 className="text-5xl font-medium leading-10 mt-3">
+                <h2 className="text-5xl font-semibold leading-10 mt-3">
                   Lorem ipsum dolor sit amet, consectetur{" "}
                   <span className="text-primary ">Adipiscing elit</span>.
                 </h2>

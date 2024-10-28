@@ -8,7 +8,7 @@ export const PrimaryButton = ({
   onClick?: () => void;
 }) => {
   return (
-    <button onClick={onClick} className={`primary-btn ${className}`}>
+    <button onClick={onClick} className={`primary-btn uppercase ${className}`}>
       {children}
     </button>
   );
@@ -24,7 +24,10 @@ export const SecondaryButton = ({
   onClick?: () => void;
 }) => {
   return (
-    <button onClick={onClick} className={`secondary-btn ${className}`}>
+    <button
+      onClick={onClick}
+      className={`secondary-btn uppercase ${className}`}
+    >
       {children}
     </button>
   );

@@ -22,9 +22,9 @@ const config: Config = {
         },
       },
       colors: {
-        primary: "#a97306", // Dark mode primary color
-        secondary: "#8c4800", // Dark mode secondary color
-        accent: "#4a5568", // Dark mode accent color
+        primary: "#e25e0c", // Dark mode primary color
+        secondary: "#b95b12", // Dark mode secondary color
+        accent: "#786d4f", // Dark mode accent color
         background: "#f7fafc", // Light mode background color
         foreground: "#ffffff", // Light mode foreground color
         grey: "#b3b4b4",

@@ -34,8 +34,8 @@ const ProjectCard = ({ data }: any) => {
           {data.description}
         </p>
         <div className="translate-y-[200%] group-hover:-translate-y-0  duration-100 ease-in-out delay-100 w-full flex gap-5 justify-center items-center">
-          <SecondaryButton>Read More</SecondaryButton>
-          <PrimaryButton>Live Demo</PrimaryButton>
+          <SecondaryButton className="text-white">Read More</SecondaryButton>
+          <PrimaryButton className="text-white">Live Demo</PrimaryButton>
         </div>
       </div>
     </div>
