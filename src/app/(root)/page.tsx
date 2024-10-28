@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import MainBanner from "@/components/MainBanner";
 import News from "@/components/News";
+import Projects from "@/components/Projects";
 import ServiceField from "@/components/ServiceField";
 import Services from "@/components/Services";
 import Subscription from "@/components/Subscription";
@@ -14,6 +15,7 @@ const HomePage = () => {
       <About />
       <ServiceField />
       <Subscription />
+      <Projects />
       <News />
     </div>
   );

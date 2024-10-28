@@ -164,3 +164,56 @@ export const subscription = [
     ],
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Portfolio Website",
+    description:
+      "A personal portfolio showcasing my projects, skills, and experience as a developer. Built with modern frontend technologies for a smooth and interactive user experience.",
+    image: "/assets/img/slider/1.png",
+    techStack: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    link: "https://portfolio.example.com",
+    github: "https://github.com/username/portfolio",
+  },
+  {
+    id: 2,
+    title: "E-commerce Store",
+    description:
+      "A fully-featured e-commerce platform with product listings, a shopping cart, and payment processing. Designed for scalability and user-friendly navigation.",
+    image: "/assets/img/slider/2.png",
+    techStack: ["React", "Redux", "Node.js", "MongoDB"],
+    link: "https://ecommerce.example.com",
+    github: "https://github.com/username/ecommerce-store",
+  },
+  {
+    id: 3,
+    title: "Social Media App",
+    description:
+      "A social media application where users can post updates, follow other users, and interact through comments and likes. Built with a focus on performance and user engagement.",
+    image: "/assets/img/slider/3.png",
+    techStack: ["React Native", "Firebase", "Redux Toolkit"],
+    link: "https://socialmedia.example.com",
+    github: "https://github.com/username/social-media-app",
+  },
+  {
+    id: 4,
+    title: "Project Management Tool",
+    description:
+      "An application to manage tasks, collaborate with team members, and track project progress. Ideal for remote teams looking for efficient workflows.",
+    image: "/assets/img/slider/1.png",
+    techStack: ["Vue.js", "Vuetify", "Node.js", "PostgreSQL"],
+    link: "https://projectmanagement.example.com",
+    github: "https://github.com/username/project-management-tool",
+  },
+  {
+    id: 5,
+    title: "Weather App",
+    description:
+      "A weather forecasting app that provides real-time weather data and a seven-day forecast. User-friendly interface with location-based data updates.",
+    image: "/assets/img/slider/2.png",
+    techStack: ["HTML", "CSS", "JavaScript", "OpenWeather API"],
+    link: "https://weatherapp.example.com",
+    github: "https://github.com/username/weather-app",
+  },
+];
