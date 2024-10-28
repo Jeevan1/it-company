@@ -13,7 +13,7 @@ const Subscription = () => {
     <div className="py-16">
       <div className="container">
         <SectionHeading title="BEST PLAN" className="justify-center">
-          <h2 className="text-4xl font-semibold leading-10 mt-3 text-center max-w-[600px] mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-3 text-center max-w-[600px] mx-auto">
             No hidden charge{" "}
             <span className="text-primary capitalize">
               Choose your pricing plan
@@ -21,7 +21,7 @@ const Subscription = () => {
             .
           </h2>
         </SectionHeading>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-10 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-10 items-center">
           {subscription.map((item, idx) => (
             <div className="shadow-black border py-7 hover:shadow-lg duration-200">
               <div className="flex gap-3 justify-center items-center border-b pb-7">

@@ -8,7 +8,7 @@ const News = () => {
     <div className="py-16">
       <div className="container">
         <SectionHeading title="LATEST NEWS" className="justify-center">
-          <h2 className="text-4xl font-medium leading-10 mt-3 text-center max-w-[1000px] mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-3 text-center max-w-[1000px] mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{" "}
             <span className="text-primary">Eiusmod</span>.
           </h2>
@@ -41,10 +41,10 @@ const News = () => {
                 }}
               >
                 <div className="w-full h-full flex flex-col justify-end items-start p-7 gap-5">
-                  <h1 className="text-2xl font-semibold text-white z-10">
+                  <h1 className="text-xl sm:text-2xl font-semibold text-white z-10">
                     {item.title}
                   </h1>
-                  <p className="text-lg font-medium text-white z-10 line-clamp-2">
+                  <p className="text-md ms:text-lg font-medium text-white z-10 line-clamp-2">
                     {item.description}
                   </p>
                 </div>

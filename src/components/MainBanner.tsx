@@ -66,7 +66,7 @@ const MainBanner = () => {
         <div className="slider-container">
           <Slider {...settings}>
             {slider.map((item, i) => (
-              <div key={i} className="h-[100vh] relative ">
+              <div key={i} className="h-[800px] md:h-[100vh]  relative ">
                 <div
                   className="absolute top-0 left-0 right-0 bottom-0 z-0"
                   style={{
@@ -80,7 +80,7 @@ const MainBanner = () => {
                 <div className="absolute top-0 left-0 right-0 bottom-0 p-10 flex items-center justify-center bg-slate-600 bg-opacity-80 ">
                   <div className="container text-center flex flex-col gap-10 max-w-[778px] ">
                     <Heading>// {item.heading}</Heading>
-                    <h1 className="text-white text-[60px] font-semibold font-mono">
+                    <h1 className="text-white text-3xl  lg:text-[60px] md:text-[40px] font-semibold font-mono">
                       {item.title}
                     </h1>
                     <p className="text-white text-lg font-semibold">

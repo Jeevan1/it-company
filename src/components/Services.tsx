@@ -6,9 +6,9 @@ const Services = () => {
   return (
     <div className="-mt-20 mb-16">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 ">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-7 ">
           {services.map((item, i) => (
-            <div key={i} className=" z-50  group">
+            <div key={i} className=" z-40  group">
               <div className="h-56 overflow-hidden duration-300 bg-white rounded-md shadow-lg">
                 <div className="h-full flex flex-col gap-4 items-center justify-center cursor-pointer p-4 opacity-100 translate-y-0    group-hover:opacity-0 group-hover:translate-y-[100%] group-hover:hidden duration-500">
                   <div>

@@ -15,8 +15,10 @@ const ServiceFieldCard = ({ data }: any) => {
         }}
       />
       <div className=" w-full absolute top-0 left-0 flex flex-col justify-end items-start h-full z-10 p-10 gap-5 translate-y-[15%] group-hover:-translate-y-0  duration-200 ease-linear">
-        <h1 className="text-2xl font-semibold text-white z-10">{data.title}</h1>
-        <p className="line-clamp-2 text-lg font-medium text-white z-10">
+        <h1 className="text-xl md:text-2xl font-semibold text-white z-10">
+          {data.title}
+        </h1>
+        <p className="line-clamp-2 text-md md:text-lg font-medium text-white z-10">
           {data.description}
         </p>
         <div className="translate-y-[200%] group-hover:-translate-y-0  duration-100 ease-in-out delay-100">

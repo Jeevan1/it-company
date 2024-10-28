@@ -13,7 +13,7 @@ const SectionHeading = ({
   return (
     <div>
       <h1
-        className={`text-2xl font-bold text-primary flex gap-2 items-center ${className}`}
+        className={`text-xl md:text-2xl font-bold text-primary flex gap-2 items-center ${className}`}
       >
         {title}
         <FaLongArrowAltRight />

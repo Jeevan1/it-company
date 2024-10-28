@@ -21,7 +21,7 @@ const FooterLink = ({
 }) => {
   return (
     <li className="text-white pb-1">
-      <Link href={link || ""} className=" text-md">
+      <Link href={link || ""} className="text-sm sm:text-md">
         {value}
       </Link>
     </li>
@@ -32,21 +32,31 @@ function Footer() {
   return (
     <footer className="py-10 mt-5 bg-accent">
       <div className="container">
-        <div className="flex justify-between items-center pb-10 mb-10 border-b border-white">
-          <div className="flex flex-1 flex-col gap-2 justify-center items-center border-r ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-content-center gap-10 pb-10 mb-10 border-b border-white">
+          <div className="flex flex-col gap-2 justify-center items-center text-center border-0 sm:border-r ">
             <FiPhoneCall size={40} color="#fff" />
-            <p className="text-white font-semibold text-lg">Phone Number</p>
-            <p className="text-white font-semibold text-lg">+977-98267-2727</p>
+            <p className="text-white font-semibold text-sm md:text-lg">
+              Phone Number
+            </p>
+            <p className="text-white font-semibold text-sm md:text-lg">
+              +977-98267-2727
+            </p>
           </div>
-          <div className="flex flex-1 flex-col gap-2 justify-center items-center border-r">
+          <div className="flex flex-col gap-2 justify-center items-center text-center border-0 md:border-r">
             <IoMailUnreadOutline size={40} color="#fff" />
-            <p className="text-white font-semibold text-lg">Email Address</p>
-            <p className="text-white font-semibold text-lg">geoshop@gmail</p>
+            <p className="text-white font-semibold text-sm md:text-lg">
+              Email Address
+            </p>
+            <p className="text-white font-semibold text-sm md:text-lg">
+              geoshop@gmail
+            </p>
           </div>
-          <div className="flex flex-1 flex-col gap-2 justify-center items-center">
+          <div className="flex flex-col gap-2 justify-center items-center text-center ">
             <MdOutlineShareLocation size={40} color="#fff" />
-            <p className="text-white font-semibold text-lg">Location</p>
-            <p className="text-white font-semibold text-lg">
+            <p className="text-white font-semibold text-sm md:text-lg">
+              Location
+            </p>
+            <p className="text-white font-semibold text-sm md:text-lg">
               Kathmandu, Budhanilkantha-13, Nepal
             </p>
           </div>
@@ -72,7 +82,7 @@ function Footer() {
               </ul>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-100 mt-5 sm:mt-0">
-              <h6 className=" text-white text-xl mb-2">
+              <h6 className=" text-white text-md sm:text-xl mb-2">
                 Shopping &amp; Categories
               </h6>
               <ul>
@@ -88,7 +98,9 @@ function Footer() {
               </ul>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-100 mt-5 sm:mt-0">
-              <h6 className=" text-white text-lg mb-2">Useful Links</h6>
+              <h6 className=" text-white text-md sm:text-lg mb-2">
+                Useful Links
+              </h6>
               <ul>
                 <FooterLink link={"./"} value={"Home"} />
                 <FooterLink link={"./about"} value={"About Us"} />
@@ -97,7 +109,7 @@ function Footer() {
               </ul>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-100 mt-5 sm:mt-0">
-              <h6 className=" text-white text-lg mb-2">
+              <h6 className=" text-white text-md sm:text-lg mb-2">
                 Help &amp; Information
               </h6>
               <ul>
@@ -110,20 +122,28 @@ function Footer() {
           </div>
         </div>
         <div className=" pt-4 text-center ">
-          <p className="text-white">
+          <p className="text-white text-sm sm:text-md">
             Copyright © 2023 GeoShop Co., Ltd. All Rights Reserved.
           </p>
-          <p className="text-white">
+          <p className="text-white text-sm sm:text-md">
             Design:{" "}
-            <Link href="/about" className=" text-accent">
+            <Link href="/about" className=" text-white">
               Jdev
             </Link>
           </p>
-          <ul className=" flex justify-center gap-3 pt-2">
-            <FooterLink value={<FaFacebookF className="icon" />} />
-            <FooterLink value={<FaTwitter className="icon" />} />
-            <FooterLink value={<FaLinkedinIn className="icon" />} />
-            <FooterLink value={<FaInstagram className="icon" />} />
+          <ul className=" flex justify-center gap-3 pt-2 ">
+            <FooterLink
+              value={<FaFacebookF className="icon text-sm sm:text-md" />}
+            />
+            <FooterLink
+              value={<FaTwitter className="icon text-sm sm:text-md" />}
+            />
+            <FooterLink
+              value={<FaLinkedinIn className="icon text-sm sm:text-md" />}
+            />
+            <FooterLink
+              value={<FaInstagram className="icon text-sm sm:text-md" />}
+            />
           </ul>
         </div>
       </div>
