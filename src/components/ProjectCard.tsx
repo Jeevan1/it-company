@@ -15,7 +15,7 @@ const ProjectCard = ({ data }: any) => {
           zIndex: 1,
         }}
       />
-      <div className=" w-full absolute top-0 left-0 flex flex-col justify-end items-start h-full z-10 p-10 gap-5 translate-y-[15%] group-hover:-translate-y-0  duration-200 ease-linear">
+      <div className=" w-full absolute top-0 left-0 flex flex-col justify-end items-start h-full z-10 py-10 px-5 gap-5 translate-y-[15%] group-hover:-translate-y-0  duration-200 ease-linear">
         <h1 className="text-2xl font-semibold text-white z-10">{data.title}</h1>
         <ul className="flex gap-3 flex-wrap">
           {data.techStack.map((tech: string) => (
@@ -33,7 +33,7 @@ const ProjectCard = ({ data }: any) => {
         <p className="line-clamp-2 text-lg font-medium text-white z-10">
           {data.description}
         </p>
-        <div className="translate-y-[200%] group-hover:-translate-y-0  duration-100 ease-in-out delay-100 w-full flex gap-5 justify-center items-center">
+        <div className="translate-y-[200%] group-hover:-translate-y-0  duration-100 ease-in-out delay-100 w-full flex gap-4 justify-center items-center">
           <SecondaryButton className="text-white">Read More</SecondaryButton>
           <PrimaryButton className="text-white">Live Demo</PrimaryButton>
         </div>
