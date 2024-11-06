@@ -315,3 +315,90 @@ export const team = [
     ],
   },
 ];
+
+export const blogPosts = [
+  {
+    time: "2024-11-01",
+    service: "Web Development",
+    img: "/assets/img/team/1.png",
+    user: {
+      name: "Alex Kim",
+      title: "Project Manager",
+      image: "/assets/img/team/1.png",
+    },
+    title: "The Future of Web Development in 2025",
+    desc: "An exploration of upcoming trends in web development, from AI-driven designs to more dynamic frameworks. Discover what’s shaping the future of the web.",
+  },
+  {
+    time: "2024-10-20",
+    service: "UX/UI Design",
+    img: "/assets/img/team/2.png",
+    user: {
+      name: "Taylor Smith",
+      title: "Lead Designer",
+      image: "/assets/img/team/2.png",
+    },
+    title: "5 UX Design Principles for User-Centric Interfaces",
+    desc: "Learn about essential UX design principles that help create user-friendly, intuitive interfaces. Perfect for designers looking to enhance user satisfaction.",
+  },
+  {
+    time: "2024-10-10",
+    service: "Mobile Development",
+    img: "/assets/img/team/3.png",
+    user: {
+      name: "Jordan Lee",
+      title: "UX/UI Designer",
+      image: "/assets/img/team/3.png",
+    },
+    title: "Top 10 Tools for Mobile App Development in 2024",
+    desc: "Explore the best tools and resources available for mobile app developers to streamline the development process and improve app performance.",
+  },
+  {
+    time: "2024-10-10",
+    service: "Mobile Development",
+    img: "/assets/img/team/3.png",
+    user: {
+      name: "Jordan Lee",
+      title: "UX/UI Designer",
+      image: "/assets/img/team/3.png",
+    },
+    title: "Top 10 Tools for Mobile App Development in 2024",
+    desc: "Explore the best tools and resources available for mobile app developers to streamline the development process and improve app performance.",
+  },
+  {
+    time: "2024-10-10",
+    service: "Mobile Development",
+    img: "/assets/img/team/2.png",
+    user: {
+      name: "Jordan Lee",
+      title: "UX/UI Designer",
+      image: "/assets/img/team/3.png",
+    },
+    title: "Top 10 Tools for Mobile App Development in 2024",
+    desc: "Explore the best tools and resources available for mobile app developers to streamline the development process and improve app performance.",
+  },
+  {
+    time: "2024-10-10",
+    service: "Mobile Development",
+    img: "/assets/img/team/1.png",
+    user: {
+      name: "Jordan Lee",
+      title: "UX/UI Designer",
+      image: "/assets/img/team/3.png",
+    },
+    title: "Top 10 Tools for Mobile App Development in 2024",
+    desc: "Explore the best tools and resources available for mobile app developers to streamline the development process and improve app performance.",
+  },
+  {
+    time: "2024-10-10",
+    service: "Mobile Development",
+    img: "/assets/img/team/1.png",
+    user: {
+      name: "Jordan Lee",
+      title: "UX/UI Designer",
+      image: "/assets/img/team/3.png",
+    },
+    title: "Top 10 Tools for Mobile App Development in 2024",
+    desc: "Explore the best tools and resources available for mobile app developers to streamline the development process and improve app performance.",
+  },
+];
