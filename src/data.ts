@@ -1,4 +1,4 @@
-import { link } from "fs";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export const nav = [
   {
@@ -215,5 +215,103 @@ export const projects = [
     techStack: ["HTML", "CSS", "JavaScript", "OpenWeather API"],
     link: "https://weatherapp.example.com",
     github: "https://github.com/username/weather-app",
+  },
+];
+
+export const testimonials = [
+  {
+    name: "Emily Carter",
+    title: "CTO at InnovateTech",
+    testimonial:
+      "The team at [Your Company Name] exceeded our expectations. Their expertise in frontend and backend development brought our project to life in record time with outstanding quality.",
+    image: "/assets/img/slider/2.png",
+  },
+  {
+    name: "John Ramirez",
+    title: "Product Manager at FinSolutions",
+    testimonial:
+      "[Your Company Name] delivered a seamless and scalable solution for our finance application. Their proactive approach and quick response to our needs made collaboration a breeze.",
+    image: "/assets/img/slider/1.png",
+  },
+  {
+    name: "Marta Klein",
+    title: "CEO at HealthPlus",
+    testimonial:
+      "The development team at [Your Company Name] demonstrated exceptional skill in delivering a user-friendly platform for our healthcare application. They are reliable, innovative, and professional.",
+    image: "/assets/img/slider/3.png",
+  },
+  {
+    name: "Raj Patel",
+    title: "Head of Engineering at EduNext",
+    testimonial:
+      "We partnered with [Your Company Name] for a complex project, and they consistently provided high-quality code and valuable insights. Their attention to detail and technical proficiency were impressive.",
+    image: "/assets/img/slider/2.png",
+  },
+];
+
+export const workingProcess = [
+  {
+    step: 1,
+    title: "Discovery & Planning",
+    description:
+      "We begin by understanding your goals and gathering requirements.",
+    icon: "/assets/img/working/01.png",
+  },
+  {
+    step: 2,
+    title: "Design & Prototyping",
+    description:
+      "Our designers create wireframes and interactive prototypes focused on user experience.",
+    icon: "/assets/img/working/02.png",
+  },
+  {
+    step: 3,
+    title: "Development & Testing",
+    description:
+      "Our developers bring the design to life, coding each feature with quality and scalability in mind.",
+    icon: "/assets/img/working/03.png",
+  },
+  {
+    step: 4,
+    title: "Launch & Support",
+    description:
+      "After final refinements, we launch the project and monitor its performance.",
+    icon: "/assets/img/working/04.png",
+  },
+];
+
+export const team = [
+  {
+    name: "Alex Kim",
+    title: "Project Manager",
+    bio: "Alex oversees project planning and ensures that every phase aligns with our client's goals. With a strong background in agile methodologies, Alex keeps the team organized and motivated.",
+    image: "/assets/img/team/1.png",
+    socialLinks: [
+      { type: "FaGithub", url: "https://github.com/alexkim" },
+      { type: "FaLinkedin", url: "https://linkedin.com/in/alexkim" },
+      { type: "FaInstagram", url: "https://instagram.com/alexkim" },
+    ],
+  },
+  {
+    name: "Taylor Smith",
+    title: "Lead Developer",
+    bio: "Taylor is responsible for developing robust, scalable solutions. With expertise in front-end and back-end development, Taylor bridges technical gaps and ensures code quality at every stage.",
+    image: "/assets/img/team/2.png",
+    socialLinks: [
+      { type: "FaGithub", url: "https://github.com/taylorsmith" },
+      { type: "FaLinkedin", url: "https://linkedin.com/in/taylorsmith" },
+      { type: "FaInstagram", url: "https://instagram.com/taylorsmith" },
+    ],
+  },
+  {
+    name: "Jordan Lee",
+    title: "UX/UI Designer",
+    bio: "Jordan creates intuitive and engaging designs that focus on the user experience. With a passion for clean, user-centered design, Jordan brings projects to life with visual appeal and usability.",
+    image: "/assets/img/team/3.png",
+    socialLinks: [
+      { type: "FaGithub", url: "https://github.com/jordanlee" },
+      { type: "FaLinkedin", url: "https://linkedin.com/in/jordanlee" },
+      { type: "FaInstagram", url: "https://instagram.com/jordanlee" },
+    ],
   },
 ];

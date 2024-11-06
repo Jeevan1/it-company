@@ -13,7 +13,7 @@ const Subscription = () => {
     <div className="py-16">
       <div className="container">
         <SectionHeading title="BEST PLAN" className="justify-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mt-3 text-center max-w-[600px] mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 leading-[50px] text-center max-w-[600px] mx-auto">
             No hidden charge{" "}
             <span className="text-primary capitalize">
               Choose your pricing plan

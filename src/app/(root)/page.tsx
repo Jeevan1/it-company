@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import ServiceField from "@/components/ServiceField";
 import Services from "@/components/Services";
 import Subscription from "@/components/Subscription";
+import Testimonials from "@/components/Testimonials";
 import React from "react";
 
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
       <Subscription />
       <Projects />
       <News />
+      <Testimonials />
     </div>
   );
 };

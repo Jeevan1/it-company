@@ -6,7 +6,7 @@ import { nav } from "@/data";
 import Link from "next/link";
 import { RiMenuFoldFill, RiMenuUnfoldFill } from "react-icons/ri";
 
-const Header = ({ isHomePage }: { isHomePage?: boolean }) => {
+const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [headerFixed, setHeaderFixed] = useState(false);
 
@@ -60,8 +60,8 @@ const Header = ({ isHomePage }: { isHomePage?: boolean }) => {
   return (
     <header
       className={`py-5 bg-transparent transition-all duration-300 ${
-        isHomePage ? "shadow-none" : "shadow-md"
-      } ${headerFixed ? "fixed top-0 z-[100] w-full bg-white shadow-md" : ""}`}
+        headerFixed ? "fixed top-0 z-[100] w-full bg-white shadow-md" : ""
+      }`}
     >
       <div className="container">
         <div className="flex items-center gap-5">
@@ -79,9 +79,9 @@ const Header = ({ isHomePage }: { isHomePage?: boolean }) => {
               {nav.map((item, i) => (
                 <li
                   key={i}
-                  className={`text-sm md:text-md  ${
-                    isHomePage ? "text-white" : "text-primary font-semibold"
-                  } z-[100] ${headerFixed ? " text-black font-bold" : " "}`}
+                  className={`text-sm md:text-md text-white z-[100] ${
+                    headerFixed ? " text-black font-bold" : " "
+                  }`}
                 >
                   <Link
                     href={item.href}

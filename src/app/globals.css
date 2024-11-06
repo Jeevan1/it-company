@@ -13,6 +13,14 @@
 p {
   line-height: 1.4;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: auto;
+}
 
 body {
   color: var(--foreground);
@@ -120,5 +128,20 @@ body {
 
   &::before {
     display: none;
+  }
+}
+
+.slick-dots {
+  bottom: -30px !important;
+  .slick-active {
+    button:before {
+      color: #e97319 !important;
+    }
+  }
+  li {
+    button:before {
+      font-size: 10px !important;
+      color: #e97319 !important;
+    }
   }
 }

@@ -1,19 +1,20 @@
 "use client";
 import React from "react";
 import SectionHeading from "./SectionHeading";
-import { serviceField } from "@/data";
-import ServiceFieldCard from "./ServiceFieldCard";
 import Slider from "react-slick";
+import { team } from "@/data";
+import TeamCard from "./TeamCard";
 
-const ServiceField = () => {
+const Teams = () => {
   const settings = {
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 1000,
     autoplaySpeed: 5000,
     gap: 20,
+    dots: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -31,20 +32,19 @@ const ServiceField = () => {
       },
     ],
   };
-
   return (
-    <div className="py-16">
+    <div className="py-10">
       <div className="container">
-        <SectionHeading title="Service Field" className="justify-center">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 leading-[60px] text-center max-w-[1000px] mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{" "}
-            <span className="text-primary">Eiusmod</span>.
+        <SectionHeading title="OUR TEAM" className="justify-center">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 leading-[60px]  text-center max-w-[600px] mx-auto">
+            Meet Our{" "}
+            <span className="text-primary capitalize">Professional Team</span>.
           </h2>
         </SectionHeading>
         <Slider {...settings} className="mt-10 -mx-3">
-          {serviceField.map((item, i) => (
+          {team.map((item, i) => (
             <div key={i} className="px-3">
-              <ServiceFieldCard data={item} />
+              <TeamCard data={item} />
             </div>
           ))}
         </Slider>
@@ -53,4 +53,4 @@ const ServiceField = () => {
   );
 };
 
-export default ServiceField;
+export default Teams;
