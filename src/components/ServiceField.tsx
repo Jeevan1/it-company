@@ -14,6 +14,7 @@ const ServiceField = () => {
     speed: 1000,
     autoplaySpeed: 5000,
     gap: 20,
+    dots: true,
     responsive: [
       {
         breakpoint: 1024,

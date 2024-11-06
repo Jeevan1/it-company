@@ -12,7 +12,7 @@ type ProcessProps = {
 
 const ProcessCard = ({ data }: { data: ProcessProps }) => {
   return (
-    <div className="w-full  max-w-[300px] mb-7 md:mb-0">
+    <div className="w-full min-h-[300px]  max-w-[300px] mb-7 md:mb-0">
       <div className="flex flex-col items-center h-full">
         <div className="w-16 h-16 sm:w-28 md:h-28 p-3 sm:p-5 bg-red-50 flex justify-center items-center relative mb-10">
           <Image
