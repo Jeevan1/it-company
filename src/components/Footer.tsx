@@ -30,7 +30,7 @@ const FooterLink = ({
 
 function Footer() {
   return (
-    <footer className="py-10 mt-5 bg-accent">
+    <footer className="py-10 bg-accent">
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-content-center gap-10 pb-10 mb-10 border-b border-white">
           <div className="flex flex-col gap-2 justify-center items-center text-center border-0 sm:border-r ">

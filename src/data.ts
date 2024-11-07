@@ -402,3 +402,18 @@ export const blogPosts = [
     desc: "Explore the best tools and resources available for mobile app developers to streamline the development process and improve app performance.",
   },
 ];
+
+export const contactInfo = [
+  {
+    title: "Phone Number",
+    desc: ["(+977) 9800000000", "(+977) 9800000000"],
+  },
+  {
+    title: "Email Address",
+    desc: ["J6hPZ@example.com", "J6hPZ@example.com"],
+  },
+  {
+    title: "Location",
+    desc: ["123 Main Street, City, State, ZIP"],
+  },
+];
