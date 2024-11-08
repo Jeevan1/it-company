@@ -36,7 +36,7 @@ const Teams = () => {
     <div className="py-10">
       <div className="container">
         <SectionHeading title="OUR TEAM" className="justify-center">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 leading-[60px]  text-center max-w-[600px] mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 md:leading-[60px]  text-center max-w-[600px] mx-auto">
             Meet Our{" "}
             <span className="text-primary capitalize">Professional Team</span>.
           </h2>

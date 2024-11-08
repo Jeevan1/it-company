@@ -99,11 +99,13 @@ const Header = ({ isHomePage }: { isHomePage?: boolean }) => {
             </div>
           </div>
           <div className="md:hidden z-50 flex-1 flex justify-end">
-            <RiMenuFoldFill
-              size={25}
-              onClick={handleMenuClick}
-              color={headerFixed ? "black" : "white"}
-            />
+            <div className="">
+              <RiMenuFoldFill
+                size={25}
+                onClick={handleMenuClick}
+                color={"black"}
+              />
+            </div>
             {menuOpen && (
               <div
                 className="fixed top-0 left-0 bottom-0 w-full  px-10 bg-white bg-opacity-100 z-40"
@@ -112,14 +114,14 @@ const Header = ({ isHomePage }: { isHomePage?: boolean }) => {
                 <RiMenuUnfoldFill
                   size={25}
                   onClick={handleMenuClick}
-                  className="absolute top-5 right-5"
+                  className="absolute top-9 right-3"
                 />
                 <div className="flex flex-col items-start justify-center h-full">
                   <div className=" z-50 mb-10">
                     <Image
                       src="/logo.png"
                       alt="Logo"
-                      width={150}
+                      width={250}
                       height={100}
                       className="min-w-[130px]"
                     />

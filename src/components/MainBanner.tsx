@@ -18,7 +18,7 @@ const MainBanner = () => {
     autoplaySpeed: 5000,
     nextArrow: (
       <div>
-        <div className="absolute right-[50px] ">
+        <div className="absolute right-[10px] sm:right-[20px] md:right-[50px] ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             stroke="white"
@@ -33,23 +33,7 @@ const MainBanner = () => {
       </div>
     ),
 
-    prevArrow: (
-      <div>
-        <div className="next-slick-arrow rotate-180 absolute left-[50px] opacity-50">
-          ghcgf
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            stroke="white"
-            fill="white"
-            height="24"
-            viewBox="0 -960 960 960"
-            width="24"
-          >
-            <path d="m242-200 200-280-200-280h98l200 280-200 280h-98Zm238 0 200-280-200-280h98l200 280-200 280h-98Z" />
-          </svg>
-        </div>
-      </div>
-    ),
+    prevArrow: <div>hguytuigig</div>,
     responsive: [
       {
         breakpoint: 1024,
@@ -77,6 +61,7 @@ const MainBanner = () => {
                     backgroundRepeat: "no-repeat",
                   }}
                 />
+
                 <div className="absolute top-0 left-0 right-0 bottom-0 p-10 flex items-center justify-center bg-slate-600 bg-opacity-80 ">
                   <div className="container text-center flex flex-col gap-10 max-w-[778px] ">
                     <Heading>// {item.heading}</Heading>

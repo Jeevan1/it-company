@@ -42,7 +42,7 @@ const WorkingProcess = () => {
     <div className="py-16">
       <div className="container">
         <SectionHeading title="OUR PROCESS" className="justify-center">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 leading-[60px] text-center max-w-[600px] mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 md:leading-[60px] text-center max-w-[600px] mx-auto">
             Our <span className="text-primary capitalize">Working Process</span>
             .
           </h2>

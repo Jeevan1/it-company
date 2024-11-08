@@ -1,3 +1,4 @@
+import PageTitle from "@/components/container/PageTitle";
 import ContactForm from "@/components/form/ContactForm";
 import SectionHeading from "@/components/SectionHeading";
 import { contactInfo } from "@/data";
@@ -22,26 +23,27 @@ const ContactPage = (props: Props) => {
   };
   return (
     <div>
+      <PageTitle title="Contact Us" page="Contact Us" />
       <div className="pt-16">
         <div className="container">
           <SectionHeading title="GET IN TOUCH" className="justify-center">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 leading-[60px] text-center max-w-[1000px] mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 md:leading-[60px] text-center max-w-[1000px] mx-auto">
               Lorem ipsum dolor sit amet elit, sed{" "}
               <span className="text-primary">To Eiusmod</span>.
             </h2>
           </SectionHeading>
         </div>
-        <div className="bg-gray-100 py-16 ">
+        <div className="bg-gray-100 py-7 ">
           <div className="container">
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-7">
-              <div className="md:col-span-3 shadow-lg">
+            <div className="block lg:grid md:grid-cols-5 gap-7">
+              <div className="mb-10 lg:mb-0 md:col-span-3 shadow-lg bg-white">
                 <ContactForm />
               </div>
-              <div className="md:col-span-2 shadow-lg bg-white p-10">
-                <h1 className="text-primary font-bold text-3xl">
+              <div className="md:col-span-2 shadow-lg bg-white p-7 sm:p-10">
+                <h1 className="text-primary font-bold text-2xl md:text-3xl">
                   Our Contact Info
                 </h1>
-                <p className="mt-4 text-dark font-semibold text-lg">
+                <p className="mt-4 text-dark font-semibold text-md md:text-lg">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                   perspiciatis ea itaque, dolore asperiores earum.
                 </p>
@@ -52,20 +54,22 @@ const ContactPage = (props: Props) => {
                       className="flex items-start gap-5 mt-2 border-b py-5"
                     >
                       {item.title.toLocaleLowerCase().includes("phone") && (
-                        <FaPhone className="text-primary" size={40} />
+                        <FaPhone className="text-primary text-[30px] md:text-[40px]" />
                       )}
                       {item.title.toLocaleLowerCase().includes("email") && (
-                        <HiOutlineMailOpen className="text-primary" size={40} />
+                        <HiOutlineMailOpen className="text-primary text-[30px] md:text-[40px]" />
                       )}
                       {item.title.toLocaleLowerCase().includes("location") && (
-                        <ImLocation className="text-primary" size={40} />
+                        <ImLocation className="text-primary text-[30px] md:text-[40px]" />
                       )}
                       <div>
-                        <p className="font-bold text-xl">{item.title}</p>
+                        <p className="font-bold text-lg md:text-xl">
+                          {item.title}
+                        </p>
                         {item.desc.map((item, i) => (
                           <p
                             key={i}
-                            className="font-semibold text-lg text-dark pt-2"
+                            className="font-semibold text-md md:text-lg text-dark pt-2"
                           >
                             {item}
                           </p>
@@ -78,7 +82,7 @@ const ContactPage = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-100 pt-16">
+        <div className="bg-gray-100 pt-10">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15282225.79979123!2d73.7250245393691!3d20.750301298393563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1587818542745!5m2!1sen!2sin"
             // width="600"

@@ -30,8 +30,12 @@ const About = () => {
           </div>
           <div className="flex flex-col justify-center ml-[0px] sm:ml-[50px]">
             <div className="border-b pb-10">
-              <SectionHeading title="About Us">
-                <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 leading-[60px]">
+              <SectionHeading
+                title="About Us"
+                className="sm:pb-0 md:pb-0 "
+                position="left"
+              >
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mt-3 md:leading-[60px]">
                   Lorem ipsum dolor sit amet, consectetur{" "}
                   <span className="text-primary ">Adipiscing elit</span>.
                 </h2>

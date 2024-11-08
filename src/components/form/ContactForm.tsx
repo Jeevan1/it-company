@@ -4,11 +4,13 @@ import { PrimaryButton } from "../Button";
 
 const ContactForm = () => {
   return (
-    <div className="h-full  bg-white p-10">
-      <h1 className="text-primary font-bold text-3xl">Contact With Us</h1>
+    <div className="bg-white p-7 sm:p-10">
+      <h1 className="text-primary font-bold text-2xl md:text-3xl">
+        Contact With Us
+      </h1>
       <form
         action=""
-        className=" h-full py-5 grid grid-cols-1 md:grid-cols-2 gap-5 "
+        className=" h-full py-5 flex flex-col sm:grid sm:grid-cols-2 gap-5 "
       >
         <InputField
           type="text"
