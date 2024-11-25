@@ -64,7 +64,7 @@ function Footer() {
         <div className="Footer__top ">
           <div className="flex flex-wrap justify-between  border-bottom pb-4">
             <div className="lg:w-1/4 md:w-1/2 w-100 mt-5 sm:mt-0">
-              <div className="logo">
+              <div className="logo mb-4">
                 <Image
                   src={"/logo.png"}
                   width={200}
@@ -83,18 +83,12 @@ function Footer() {
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-100 mt-5 sm:mt-0">
               <h6 className=" text-white text-md sm:text-xl mb-2">
-                Shopping &amp; Categories
+                Categories
               </h6>
               <ul>
-                <FooterLink
-                  link={"./products/category/men"}
-                  value={"Men’s Shopping"}
-                />
-                <FooterLink
-                  link={"./products/category/women"}
-                  value={"Women’s Shopping"}
-                />
-                <FooterLink value={"Kid’s Shopping"} />
+                <FooterLink link={""} value={"Projects"} />
+                <FooterLink link={""} value={"Portfolio"} />
+                <FooterLink value={"Blogs"} />
               </ul>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-100 mt-5 sm:mt-0">
@@ -103,8 +97,8 @@ function Footer() {
               </h6>
               <ul>
                 <FooterLink link={"./"} value={"Home"} />
-                <FooterLink link={"./about"} value={"About Us"} />
-                <FooterLink link={"./contact-us"} value={"Contact"} />
+                <FooterLink link={"./company"} value={"About Us"} />
+                <FooterLink link={"./contact"} value={"Contact"} />
                 <FooterLink value={"Help"} />
               </ul>
             </div>
@@ -115,7 +109,6 @@ function Footer() {
               <ul>
                 <FooterLink value={"Help"} />
                 <FooterLink value={"FAQ's"} />
-                <FooterLink value={"Shipping"} />
                 <FooterLink value={"Tracking ID"} />
               </ul>
             </div>
@@ -123,7 +116,7 @@ function Footer() {
         </div>
         <div className=" pt-4 text-center ">
           <p className="text-white text-sm sm:text-md">
-            Copyright © 2023 GeoShop Co., Ltd. All Rights Reserved.
+            Copyright © 2023 My It company Co., Ltd. All Rights Reserved.
           </p>
           <p className="text-white text-sm sm:text-md">
             Design:{" "}
